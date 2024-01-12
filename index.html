@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="containe">
+        <h3>Bora casar?</h3>
+        <button><a  onclick="sim () " href="https://youtu.be/izGwDsrQ1eQ?si=6ySjheuKy7bw7LiW">Sim</a></button>
+        <button  onmouseover="brincar ()" id="não">Não</button>
+    </div>
+
+    <div class="img">
+    <img src="8e26d04721593a20d6a1397c2d38a515b2b0958a53144b2107c0c9007260b7fd_1.jpg">
+    </div>
+    <script>
+
+        var button = document.getElementById('não');
+        var height = window.innerHeight - 50;
+        var width = window.innerWidth - 50;
+
+        function brincar () {
+            button.style.position = 'absolute';
+            button.style.top = Math.random() * height + 'px'
+            button.style.left = Math.random() * width + 'px'
+        }
+
+        function sim () {
+            alert ('Para comemorar nosso amor, dedico uma musica para vc!')
+        }
+
+
+    </script>
+    
+    
+</body>
+</html>
